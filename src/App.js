@@ -8,7 +8,8 @@ function App (){
         <div className="App">
             
             <ChangeText 
-                getName='You are working huh!!'
+                getName='Selasi Ahiaxornu'
+                getAge = '25'
             />
 
         </div>
