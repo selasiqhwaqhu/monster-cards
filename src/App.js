@@ -1,21 +1,45 @@
+import { useState } from 'react';
 import './App.css';
-import ChangeText from './components/click.component';
+import { CardList } from './components/card-list/card-list.component';
+import SearchBox  from './components/search-box/search-box.component';
+import { useEffect } from 'react';
 
 
-function App (){
 
-    return (
-        <div className="App">
+function App() {
+
+    const [monsters,setMonsters] = useState([])
+    const [searchField, setSearchField]  = useState('')      
+        
+
+
+    useEffect(()=>{
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then((res) => res.json())
+            .then((data)=>setMonsters(data))
+            console.log('monsters');
+    
+    },[])
+   
+    
+
+        const filteredSearch = monsters.filter(monsters=>monsters.name.toLowerCase().includes(searchField.toLowerCase()))
+        
+        return (
+            <div className="App">
+                
             
-            <ChangeText 
-                getName='Selasi Ahiaxornu'
-                getAge = '25'
-            />
-
-        </div>
-
-        );
-
+                <SearchBox 
+                    placeholder='Search Monsters' 
+                    handleChange= {e=>setSearchField(e.target.value)}
+                />
+                
+                 <CardList listMonsters ={filteredSearch}/>
+            </div>
+    
+            );
+    
+   
 }
         
             
