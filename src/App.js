@@ -26,7 +26,6 @@ function App() {
                 {errorMsg!==null && <p>{errorMsg} ...</p>}
                 {Monsters!==null && <CardList listMonsters ={filteredSearch}/>}
             </div>
-    
             );
     
    
