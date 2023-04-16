@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/monster-cards/static/css/main.002c253a.css",
+    "main.js": "/monster-cards/static/js/main.82265582.js",
+    "static/js/787.4a07307c.chunk.js": "/monster-cards/static/js/787.4a07307c.chunk.js",
+    "index.html": "/monster-cards/index.html",
+    "main.002c253a.css.map": "/monster-cards/static/css/main.002c253a.css.map",
+    "main.82265582.js.map": "/monster-cards/static/js/main.82265582.js.map",
+    "787.4a07307c.chunk.js.map": "/monster-cards/static/js/787.4a07307c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.002c253a.css",
+    "static/js/main.82265582.js"
+  ]
+}
